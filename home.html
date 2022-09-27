@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar__brand">
+            <img src="logo.svg" alt="The Journey Logo" width="50" height="50" class="navbar__logo"/>Journey
+        </div>
+        <ul class="navbar__navigation">
+            <li class="navbar__navigation-item"><a href="#" class="navbar__link">Recent</a></li>
+            <li class="navbar__navigation-item"><a href="#" class="navbar__link">Calendar</a></li>
+        </ul>
+    </header>
+    <main class="main">
+        <section class="main__section-left">
+            <h1>Add new entry</h1>
+            <form class="form" action="/entry" method="POST">
+                <p class="form__input">
+                    <!-- <input type="text" name="sample" id="sample-field" /> -->
+                    <textarea name="content" id="entry" class="form__textarea" aria-label="Entry contents"></textarea>
+                </p>
+                <button type="submit" class="form__submit">Add Entry</button>
+            </form>
+        </section>
+        <section class="main__section-right">
+            <h1 class="entry__name">Recent entries</h1>
+            <article class="entry">
+                <div>
+                    <h2 class="entry__title">Had a lot of fun today</h2>
+                    <time class="entry__date" datetime="25-09-2022">• Sept 25</time>
+                </div>
+                <p class="entry__content">
+                    Today I had a great day.
+                </p>
+            </article>
+            <article class="entry">
+                <div>
+                    <h2 class="entry__title">A bit of a chill day today</h2>
+                    <time class="entry__date" datetime="24-09-2022">• Sept 24</time>
+                </div>
+                <p class="entry__content">
+                    Today I did not do much.
+                </p>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <!-- footer takes the entire width of the page -->
+        <div class="footer__content">
+            <section class="left">
+                <a class="footer__item">Made by Sorana Ojog</a>
+                <a class="footer__item">Check out my other projects</a>
+            </section>
+            <section class="right">
+                <div class="footer__column">
+                    <a class="footer__item" href="#">Recent</a>
+                    <a class="footer__item">Calendar</a>
+                </div>
+                <div class="footer__column">
+                    <a class="footer__item">About</a>
+                    <a class="footer__item">How this was made</a>
+                </div>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
