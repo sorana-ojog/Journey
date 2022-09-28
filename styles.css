@@ -18,7 +18,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     font-size: 22px;
-    background-color: #c1b0a3;
+    background-color: #c6ab99;
 }
 
 .navbar__brand{
@@ -106,9 +106,14 @@ body{
     border-radius: 10px;
 }
 
+.form__textarea::placeholder {
+    opacity: .5;
+    color: #815e4a;
+}
+
 .form__submit{
     color: #815e4a;
-    background-color: #c1b0a3;
+    background-color: #c6ab99;
     border: none;
     font-size: 18px;
     font-weight: bold;
